@@ -24,7 +24,9 @@ Each question was picked because it points to a concrete recommendation Bellabea
 
 ## Data Source
 
-(where the data came from, what it covers, its limitations)
+[FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit) (Kaggle, CC0: Public Domain, via Mobius) — minute-level activity, heart rate, and sleep data from roughly 30 consenting FitBit users, covering March 12 – April 12, 2016.
+
+**Limitations (ROCCC):** small, self-selected sample (~30 Mechanical Turk participants); no demographic data despite Bellabeat's products targeting women specifically; a short, one-month window with some sparse user-days; data collected in 2016, so usage patterns may have shifted since; third-party submitted, so collection methodology can't be fully verified. Findings here should be read as directional trends, not definitive claims.
 
 ## Tools
 
