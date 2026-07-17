@@ -13,7 +13,13 @@
 
 ## Project Overview and Case Study Scenario
 
-(the business task — who's asking, what they want, why)
+ Bellabeat is a high-tech wellness company for women, and the task was to analyze public smart device fitness data to uncover usage trends, then apply those trends to a Bellabeat product and its marketing strategy. To scope the work, five guiding questions were set from the start: 
+   1) how many steps users take per day
+   2) which days they're most active
+   3) whether more steps lead to more calories burned
+   4) how much time is spent sedentary versus active
+   5) and how sleep relates to activity.
+Each question was picked because it points to a concrete recommendation Bellabeat could act on — prompting activity on low-activity days, nudging users after long sedentary stretches, or promoting sleep-tracking features.
 
 ## Data Source
 
