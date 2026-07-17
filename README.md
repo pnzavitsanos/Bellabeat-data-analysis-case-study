@@ -19,6 +19,7 @@
    3) whether more steps lead to more calories burned
    4) how much time is spent sedentary versus active
    5) and how sleep relates to activity.
+      
 Each question was picked because it points to a concrete recommendation Bellabeat could act on — prompting activity on low-activity days, nudging users after long sedentary stretches, or promoting sleep-tracking features.
 
 ## Data Source
