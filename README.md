@@ -30,7 +30,7 @@ Each question was picked because it points to a concrete recommendation Bellabea
 
 ## Tools
 
-(what you used — BigQuery, Sheets, etc.)
+Google Sheets, BigQuerry (SQL)
 
 ## Data Cleaning and Preparation
 
