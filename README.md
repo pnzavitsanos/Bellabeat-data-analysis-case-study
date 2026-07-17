@@ -54,22 +54,14 @@ Google Sheets, BigQuerry (SQL)
 
 ## Exploratory Data Analysis
 
-(the key questions you set out to answer)
+The analytical process was based on five key questions answered in this report :
 
-## Data Analysis
+✅ How many steps do users take per day?
+✅ Which days are users most active?
+✅ Do more steps lead to more calories burned?
+✅ How much time do users spend sedentary versus active?
+✅ How much do users sleep, and is sleep related to activity?
 
-
-## Tools
-
-(what you used — BigQuery, Sheets, etc.)
-
-## Data Cleaning and Preparation
-
-(what you did to get the data ready)
-
-## Exploratory Data Analysis
-
-(the key questions you set out to answer)
 
 ## Data Analysis
 
