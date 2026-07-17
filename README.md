@@ -56,11 +56,11 @@ Google Sheets, BigQuerry (SQL)
 
 The analytical process was based on five key questions answered in this report :
 
-✅ How many steps do users take per day?
-✅ Which days are users most active?
-✅ Do more steps lead to more calories burned?
-✅ How much time do users spend sedentary versus active?
-✅ How much do users sleep, and is sleep related to activity?
+- How many steps do users take per day?
+- Which days are users most active?
+- Do more steps lead to more calories burned?
+- How much time do users spend sedentary versus active?
+- How much do users sleep, and is sleep related to activity?
 
 
 ## Data Analysis
