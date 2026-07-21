@@ -215,6 +215,4 @@ Each recommendation ties back to a specific finding above, or to a pattern surfa
 
 5. **Treat sleep as its own feature, not a side effect of activity.** Average sleep was 6.56 hours/night, short of the recommended 7–9, and only weakly related to daytime activity (r = -0.12, Finding 5). Since being more active during the day didn't translate into more sleep in this data, Bellabeat should invest in dedicated sleep habits features — wind-down reminders, consistent bedtime prompts — rather than assuming a step-focused product will fix sleep on its own.
 
-## References
 
-(Kaggle dataset, Coursera certificate, tools used)
