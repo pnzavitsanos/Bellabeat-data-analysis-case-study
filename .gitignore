@@ -1,0 +1,6 @@
+# Raw data — too large for git, sourced from Kaggle (see data/README.md)
+data/raw/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db

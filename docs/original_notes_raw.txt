@@ -1,0 +1,78 @@
+Questions Google expects you to answer
+
+For the Bellabeat capstone, these five questions are enough to build a strong report:
+
+✅ How many steps do users take per day?
+✅ Which days are users most active?
+✅ Do more steps lead to more calories burned?
+✅ How much time do users spend sedentary versus active?
+✅ How much do users sleep, and is sleep related to activity?
+
+These questions naturally lead to actionable recommendations, such as encouraging users to increase activity on low-activity days, sending reminders after long sedentary periods, or promoting sleep-tracking features.
+
+DO GOOGLE SHEETS
+THEN REDO WITH SQL
+
+SQL : upload tables in bigquerry , check shemma , data types.
+
+***CREATE THE DAILY SLEEP TABLE***
+
+CREATE OR REPLACE TABLE `bella123.daily_sleep` AS
+SELECT
+  Id,
+  DATE(PARSE_DATETIME('%m/%d/%Y %I:%M:%S %p', date)) AS SleepDate,
+  COUNT(*) / 60.0 AS HoursSlept
+FROM `bella123.minute_sleep`
+WHERE value = 1
+GROUP BY Id, SleepDate;
+ 
+CREATE A DAILY ACTIVITY SUMMARY
+
+CREATE OR REPLACE TABLE `bella123.activity_summary` AS
+SELECT
+  Id,
+  ActivityDate,
+  TotalSteps,
+  Calories,
+  (VeryActiveMinutes + FairlyActiveMinutes + LightlyActiveMinutes) AS ActiveMinutes
+FROM `bella123.daily_activity`;
+
+
+NEXT WE JOIN THE 2 BY ID AND DATE. AND CREATE A NEW TABLE
+
+CREATE OR REPLACE TABLE `bella123.activity_sleep_summary` AS
+SELECT
+  a.Id,
+  a.ActivityDate,
+  a.ActiveMinutes,
+  a.TotalSteps,
+  a.Calories,
+  s.HoursSlept
+FROM `bella123.activity_summary` AS a
+JOIN `bella123.daily_sleep` AS s
+ON a.Id = s.Id
+AND a.ActivityDate = s.SleepDate;
+
+
+Prepare the sleep data.
+Prepare the activity data.
+Combine them into one analysis table.
+
+After creating activity_sleep_summary, WE can run very simple analysis queries on it, such as:
+
+SELECT AVG(HoursSlept) AS AverageHoursSlept
+FROM `bella123.activity_sleep_summary`;
+
+6.563902847571190
+
+SELECT CORR(ActiveMinutes, HoursSlept) AS Correlation
+FROM `bella123.activity_sleep_summary`;
+
+-0.11628628040510
+
+
+
+
+
+
+

@@ -1,0 +1,217 @@
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .bb-wrap {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 24px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .bb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+  }
+  .bb-header h1 { font-size: 20px; margin: 0 0 4px 0; }
+  .bb-header p { margin: 0; color: #666; font-size: 13px; }
+  .bb-links a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+    color: #2563eb;
+    text-decoration: none;
+  }
+  .bb-links a:hover { text-decoration: underline; }
+  .bb-section { margin-bottom: 28px; }
+  .bb-section h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #444;
+    margin: 0 0 12px 0;
+  }
+  .bb-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .bb-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 12px 14px;
+    background: #fafafa;
+  }
+  .bb-card .label { font-size: 11px; color: #777; margin-bottom: 4px; }
+  .bb-card .value { font-size: 18px; font-weight: 600; }
+  .bb-card .sub { font-size: 11px; color: #888; margin-top: 2px; }
+  .bb-checklist { list-style: none; padding: 0; margin: 0; }
+  .bb-checklist li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 13px;
+  }
+  .bb-checklist li:last-child { border-bottom: none; }
+  .bb-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    min-width: 62px;
+    text-align: center;
+  }
+  .bb-badge.done { background: #dcfce7; color: #166534; }
+  .bb-badge.pending { background: #fef3c7; color: #92400e; }
+  table.bb-files { width: 100%; border-collapse: collapse; font-size: 12px; }
+  table.bb-files th, table.bb-files td {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  table.bb-files th { color: #777; font-weight: 600; font-size: 11px; text-transform: uppercase; }
+  .bb-flag { color: #b45309; font-weight: 600; }
+  .bb-muted { color: #888; font-size: 12px; }
+  .bb-loading { color: #999; font-size: 13px; font-style: italic; }
+  .bb-next { font-size: 13px; line-height: 1.6; }
+  .bb-next li { margin-bottom: 6px; }
+</style>
+
+<div class="bb-wrap">
+  <div class="bb-header">
+    <div>
+      <h1>Bellabeat Case Study — Project Status</h1>
+      <p>Google Data Analytics Capstone · last refreshed on open</p>
+    </div>
+    <div class="bb-links">
+      <a href="https://github.com/pnzavitsanos/-Bellabeat-data-analysis-case-study" target="_blank">GitHub repo →</a>
+      <a href="https://drive.google.com/drive/folders/15nlI5vXn5kxwQvvXN_yOSMZUPaC4xKKu" target="_blank">Drive folder →</a>
+    </div>
+  </div>
+
+  <div class="bb-section">
+    <h2>Key Findings</h2>
+    <div class="bb-cards">
+      <div class="bb-card"><div class="label">Avg daily steps</div><div class="value">6,546.6</div></div>
+      <div class="bb-card"><div class="label">Most active day</div><div class="value">Wednesday</div><div class="sub">7,511 avg steps</div></div>
+      <div class="bb-card"><div class="label">Least active day</div><div class="value">Tuesday</div><div class="sub">4,915 avg steps</div></div>
+      <div class="bb-card"><div class="label">Steps ↔ Calories</div><div class="value">r = 0.58</div><div class="sub">moderate positive</div></div>
+      <div class="bb-card"><div class="label">Avg sedentary time</div><div class="value">995 min/day</div><div class="sub">~69% of the day</div></div>
+      <div class="bb-card"><div class="label">Avg sleep</div><div class="value">6.56 hrs</div></div>
+      <div class="bb-card"><div class="label">Activity ↔ Sleep</div><div class="value">r = -0.12</div><div class="sub">weak negative</div></div>
+    </div>
+  </div>
+
+  <div class="bb-section">
+    <h2>README Progress (Bellabeat/README.md)</h2>
+    <ul class="bb-checklist" id="readme-checklist">
+      <li><span>Project Overview and Case Study Scenario</span><span class="bb-badge done" style="margin-left:auto">FILLED</span></li>
+      <li><span>Data Source</span><span class="bb-badge done" style="margin-left:auto">FILLED</span></li>
+      <li><span>Tools</span><span class="bb-badge pending" style="margin-left:auto">PLACEHOLDER</span></li>
+      <li><span>Data Cleaning and Preparation</span><span class="bb-badge pending" style="margin-left:auto">PLACEHOLDER</span></li>
+      <li><span>Exploratory Data Analysis</span><span class="bb-badge pending" style="margin-left:auto">PLACEHOLDER</span></li>
+      <li><span>Data Analysis (SQL)</span><span class="bb-badge done" style="margin-left:auto">FILLED</span></li>
+      <li><span>Results and Findings</span><span class="bb-badge pending" style="margin-left:auto">PLACEHOLDER</span></li>
+      <li><span>Recommendations</span><span class="bb-badge pending" style="margin-left:auto">PLACEHOLDER</span></li>
+      <li><span>References</span><span class="bb-badge pending" style="margin-left:auto">PLACEHOLDER</span></li>
+    </ul>
+    <p class="bb-muted" style="margin-top:8px;">This checklist reflects the last working session — it updates when we work on the README together, not automatically.</p>
+  </div>
+
+  <div class="bb-section">
+    <h2>Live Drive Folder Snapshot</h2>
+    <div id="drive-status" class="bb-loading">Loading current Drive contents…</div>
+    <div id="drive-table-wrap" style="display:none;">
+      <table class="bb-files">
+        <thead><tr><th>File</th><th>Type</th><th>Last modified</th></tr></thead>
+        <tbody id="drive-table-body"></tbody>
+      </table>
+      <p id="drive-flags" class="bb-muted" style="margin-top:8px;"></p>
+    </div>
+  </div>
+
+  <div class="bb-section">
+    <h2>Open Items</h2>
+    <ul class="bb-next">
+      <li>Fill in remaining README sections: Tools, Data Cleaning and Preparation, Exploratory Data Analysis, Results and Findings, Recommendations, References.</li>
+      <li>Delete the old scrambled "Average steps per day.csv" and its auto-converted Sheet from Drive (superseded by the corrected upload).</li>
+      <li>Push latest README/SQL changes to GitHub once the remaining sections are filled in.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+(async function () {
+  const statusEl = document.getElementById('drive-status');
+  const tableWrap = document.getElementById('drive-table-wrap');
+  const tbody = document.getElementById('drive-table-body');
+  const flagsEl = document.getElementById('drive-flags');
+
+  function fmtDate(iso) {
+    if (!iso) return '—';
+    try {
+      const d = new Date(iso);
+      return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+    } catch (e) { return iso; }
+  }
+
+  try {
+    const r = await window.cowork.callMcpTool('mcp__27321bcc-6629-406f-a16a-c0360c34c8e3__search_files', {
+      query: "parentId = '15nlI5vXn5kxwQvvXN_yOSMZUPaC4xKKu'",
+      excludeContentSnippets: true,
+      pageSize: 50
+    });
+
+    if (r.isError) throw new Error('Tool returned an error');
+
+    let data = r.structuredContent;
+    if (!data && r.content && r.content[0] && r.content[0].text) {
+      data = JSON.parse(r.content[0].text);
+    }
+
+    const files = (data && data.files) || [];
+
+    if (files.length === 0) {
+      statusEl.textContent = 'No files found (or Drive connector not available right now).';
+      return;
+    }
+
+    // Sort by modified time, most recent first
+    files.sort((a, b) => new Date(b.modifiedTime || 0) - new Date(a.modifiedTime || 0));
+
+    files.forEach(f => {
+      const tr = document.createElement('tr');
+      const typeLabel = f.mimeType && f.mimeType.includes('spreadsheet') ? 'Google Sheet'
+        : f.mimeType && f.mimeType.includes('folder') ? 'Folder'
+        : (f.fileExtension ? f.fileExtension.toUpperCase() : 'File');
+      tr.innerHTML = `<td>${f.title || '(untitled)'}</td><td>${typeLabel}</td><td>${fmtDate(f.modifiedTime)}</td>`;
+      tbody.appendChild(tr);
+    });
+
+    // Flag duplicate titles
+    const counts = {};
+    files.forEach(f => { counts[f.title] = (counts[f.title] || 0) + 1; });
+    const dupes = Object.keys(counts).filter(t => counts[t] > 1);
+
+    if (dupes.length > 0) {
+      flagsEl.innerHTML = '<span class="bb-flag">⚠ Duplicate names found: ' + dupes.join(', ') + '</span> — likely old + corrected versions sitting side by side.';
+    } else {
+      flagsEl.textContent = `${files.length} files, no duplicate names detected.`;
+    }
+
+    statusEl.style.display = 'none';
+    tableWrap.style.display = 'block';
+  } catch (e) {
+    statusEl.textContent = 'Could not load live Drive data (' + e.message + '). Showing static status only.';
+  }
+})();
+</script>
